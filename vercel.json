@@ -3,10 +3,9 @@
   "builds": [
     { "src": "**/*.html", "use": "@vercel/static" }
   ],
-  "routes": [
-    { "src": "/(.*)", "dest": "/$1" },
-    { "handle": "filesystem" },
-    { "src": "/", "dest": "/index.html" }
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/$1" },
+    { "source": "/", "destination": "/index.html" }
   ],
   "cleanUrls": true,
   "trailingSlash": false
