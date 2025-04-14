@@ -1,11 +1,10 @@
 {
   "version": 2,
   "builds": [
-    { "src": "**/*.html", "use": "@vercel/static" }
+    { "src": "**/*", "use": "@vercel/static" }
   ],
   "rewrites": [
-    { "source": "/(.*)", "destination": "/$1" },
-    { "source": "/", "destination": "/index.html" }
+    { "source": "/(.*)", "destination": "/$1" }
   ],
   "cleanUrls": true,
   "trailingSlash": false
