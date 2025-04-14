@@ -1,0 +1,12 @@
+{
+  "name": "legion-construction",
+  "version": "1.0.0",
+  "description": "Legion Construction Website",
+  "scripts": {
+    "start": "serve",
+    "build": "echo 'No build step required for static site'"
+  },
+  "dependencies": {
+    "serve": "^14.0.0"
+  }
+}
